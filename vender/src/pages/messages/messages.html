@@ -1,0 +1,55 @@
+<!--
+  Generated template for the MessagesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content>
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="message">
+        Messages
+      </ion-segment-button>
+      <ion-segment-button value="notifications">
+        Notifications
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'message'">
+        <ion-item-sliding>
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="img/slimer.png">
+              </ion-avatar>
+              <h2>Slimer</h2>
+            </ion-item>
+            <ion-item-options side="right">
+              <button ion-button color="light">
+                <ion-icon name="mail"></ion-icon>
+                Mail
+              </button>
+              <button ion-button color="secondary">
+                <ion-icon name="text"></ion-icon>
+                Text
+              </button>
+              <button ion-button color="primary">
+                <ion-icon name="call"></ion-icon>
+                Call
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'notifications'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/avatar-cher.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+      ...
+    </ion-list>
+  </div>
+</ion-content>
