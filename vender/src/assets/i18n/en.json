@@ -7,11 +7,13 @@
   "PASSWORD": "Password",
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
+  "VALIDATE": "Validate",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Search",
   "TAB3_TITLE": "Settings",
-
+  "TAB4_TITLE": "Messages",
+  
   "MAP_TITLE": "Map",
 
   "TUTORIAL_SKIP_BUTTON": "Skip",
@@ -54,8 +56,12 @@
   "ITEM_CREATE_TITLE": "New Item",
   "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
 
-  "ITEM_NAME_PLACEHOLDER": "Name",
-  "ITEM_ABOUT_PLACEHOLDER": "About",
+  "ITEM_NAME_PLACEHOLDER": "Ad Title",
+  "ITEM_ABOUT_PLACEHOLDER": "Description",
+  "ITEM_CATEGORY_PLACEHOLDER": "Category",
+  "ITEM_PRICE_PLACEHOLDER": "Price",
+  "ITEM_STATE_PLACEHOLDER": "State",
+  "ITEM_ADDRESS_PLACEHOLDER": "Address",
 
   "DONE_BUTTON": "Done",
   "CANCEL_BUTTON": "Cancel",

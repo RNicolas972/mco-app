@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "name": "Réfrigérateur Américain VALBERG SBS 516 A+ X180C",
+            "picture": "assets/img/frigo.jpg",
+            "about": "Vend un Réfrigérateur Américain couleur Inox. Muni d'une alarme porte ouverte, d'un écran LCD, d'un distributeur d'eau <br><br> <b>Classe:</b> A+, 1.12KWh/24h <br> <b>Volume:</b> réfrigérateur: 339L / congélateur: 177L <br> <b>Dimensions:</b> H 179 cm x L 91 cm x P 64,3 cm",
+            "price": "499,98€"
+        },
+        {
+            "name": "Charlie Cheetah",
+            "picture": "assets/img/speakers/cheetah.jpg",
+            "about": "Charlie is a Cheetah."
+        },
+        {
+            "name": "Donald Duck",
+            "picture": "assets/img/speakers/duck.jpg",
+            "about": "Donald is a Duck."
+        },
+        {
+            "name": "Aspirateur ROWENTA RO8370OA",
+            "picture": "assets/img/aspirateur.jpg",
+            "about": "Le premier et le seul aspirateur sans sac cyclonique qui combine un tel niveau de performance (4A+) et de silence (67 dBA). La nouvelle tête d'aspiration 2 positions, POWER AIR, garantit des résultats exceptionnels sur tous types de sols tout en apportant un confort d'utilisation optimal avec sa glisse extrême. Muni d'un bac à poussière ultra pratique et facile à vider, il filtre 99,98 % de la poussière aspirée",
+            "price": "139,98€"
+            },
+        {
+            "name": "Ellie Elephant",
+            "picture": "assets/img/speakers/elephant.jpg",
+            "about": "Ellie is an Elephant."
+        },
+        {
+            "name": "New Era Casquette MLB New York Yankees Snapback Trucker",
+            "picture": "assets/img/casquette.jpg",
+            "about": "Complétez votre look avec cette casquette pour homme MLB New York Yankees Snapback Trucker de New Era. Dans un coloris tout noir, la casquette présente une visière incurvée classique et un casque en maille pour une ventilation essentielle. Completée avec le logo New Era sur le côté et le logo emblématique des Yankees de New York brodé au front. <br><br> <b>Matière du produit:</b> 50% Coton/50% Polyester <b>Couleur:</b> Noir",
+            "price": "24,00€"
+        },
+        {
+            "name": "Paul Puppy",
+            "picture": "assets/img/speakers/puppy.jpg",
+            "about": "Paul is a Puppy."
+        },
+        {
+            "name": "Champion Sweat à capuche Tape Crop Femme",
+            "picture": "assets/img/champion.jpg",
+            "about": "En exclusivité chez JD Sports ! Rehausse ton style avec le sweat Tape Crop de Champion. Dans un coloris orange, il est confectionné dans un tissu ultra-doux pour résister au froid. Dans une coupe courte, le sweat à capuche est fini avec une bande noire Champion le long des bras et avec le logo Champion sur la poitrine. <br><br> <b>Matière du produit:</b> 80% coton / 20% Polyester <br> <b>Couleur:</b> Orange",
+            "price": "70,00€"
+        }
+    ]
+}

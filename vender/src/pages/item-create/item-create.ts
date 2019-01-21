@@ -2,6 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Camera } from '@ionic-native/camera';
 import { IonicPage, NavController, ViewController } from 'ionic-angular';
+import { Item } from '../../models/item';
+import { Items } from '../../providers';
 
 @IonicPage()
 @Component({
@@ -17,11 +19,18 @@ export class ItemCreatePage {
 
   form: FormGroup;
 
-  constructor(public navCtrl: NavController, public viewCtrl: ViewController, formBuilder: FormBuilder, public camera: Camera) {
-    this.form = formBuilder.group({
-      profilePic: [''],
+  currentItems: Item[];
+
+  constructor(public navCtrl: NavController, 
+    formBuilder: FormBuilder, public viewCtrl: ViewController, public camera: Camera, public items: Items) {
+      this.currentItems = this.items.query();
+      this.form = formBuilder.group({
+      itemPic: [''],
       name: ['', Validators.required],
-      about: ['']
+      about: [''],
+      categorie: [''],
+      state: [''],
+      price: [''],
     });
 
     // Watch the form for changes, and
@@ -41,7 +50,7 @@ export class ItemCreatePage {
         targetWidth: 96,
         targetHeight: 96
       }).then((data) => {
-        this.form.patchValue({ 'profilePic': 'data:image/jpg;base64,' + data });
+        this.form.patchValue({ 'itemPic': 'data:image/jpg;base64,' + data });
       }, (err) => {
         alert('Unable to take photo');
       })
@@ -55,14 +64,14 @@ export class ItemCreatePage {
     reader.onload = (readerEvent) => {
 
       let imageData = (readerEvent.target as any).result;
-      this.form.patchValue({ 'profilePic': imageData });
+      this.form.patchValue({ 'itemPic': imageData });
     };
 
     reader.readAsDataURL(event.target.files[0]);
   }
 
-  getProfileImageStyle() {
-    return 'url(' + this.form.controls['profilePic'].value + ')'
+  getItemImageStyle() {
+    return 'url(' + this.form.controls['itemPic'].value + ')'
   }
 
   /**
@@ -78,6 +87,16 @@ export class ItemCreatePage {
    */
   done() {
     if (!this.form.valid) { return; }
-    this.viewCtrl.dismiss(this.form.value);
+    this.viewCtrl.dismiss(this.form.value);  
+  }
+
+  createItem() {
+    let item = {
+      "name": this.form.controls['name'].value,
+      "picture": this.form.controls['itemPic'].value,
+      "about": this.form.controls['about'].value,
+      "price": this.form.controls['price'].value,
+    };
+    this.items.add(item);
   }
 }

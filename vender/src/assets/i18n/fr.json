@@ -4,10 +4,12 @@
   "EMAIL": "E-mail",
   "LOGIN": "Connexion",
   "SIGNUP": "Inscription",
-
+  "VALIDATE": "Valider",
+  
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Recherche",
   "TAB3_TITLE": "Paramètres",
+  "TAB4_TITLE": "Messages",
 
   "MAP_TITLE": "Carte",
 
@@ -37,12 +39,18 @@
   "SIGNUP_ERROR": "Inscription impossible. Veuillez vérifier les informations de votre compte et réessayer.",
   "SIGNUP_BUTTON": "Inscription",
 
-  "LIST_MASTER_TITLE": "Items",
+  "LIST_MASTER_TITLE": "Fil d'actualité",
 
-  "ITEM_CREATE_TITLE": "Nouvel item",
+  "ITEM_CREATE_TITLE": "Nouvel article",
   "ITEM_CREATE_CHOOSE_IMAGE": "Ajouter une image",
 
   "CARDS_TITLE": "Social",
+  "SEARCH_TITLE": "Recherche",
 
-  "SEARCH_TITLE": "Recherche"
+  "ITEM_NAME_PLACEHOLDER": "Titre de l'annonce",
+  "ITEM_ABOUT_PLACEHOLDER": "Description de l'annonce",
+  "ITEM_CATEGORY_PLACEHOLDER": "Catégorie",
+  "ITEM_PRICE_PLACEHOLDER": "Prix",
+  "ITEM_STATE_PLACEHOLDER": "Ville ou Code Postal",
+  "ITEM_ADDRESS_PLACEHOLDER": "Adresse"
 }

@@ -1,12 +1,12 @@
 page-item-create {
-  .profile-image-wrapper {
+  .item-image-wrapper {
     text-align: center;
     margin: 20px 0;
 
-    .profile-image {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
+    .item-image {
+      width: 160px;
+      height: 160px;
+      border-radius: 5%;
 
       display: inline-block;
 
@@ -15,13 +15,13 @@ page-item-create {
       background-position: center;
     }
 
-    .profile-image-placeholder {
+    .item-image-placeholder {
       display: inline-block;
 
       background-color: #eee;
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      border-radius: 5%;
 
       font-size: 12px;
 

@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
-
 import { Item } from '../../models/item';
+import { HttpClient } from '@angular/common/http';
+import { File } from '@ionic-native/file';
+
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class Items {
@@ -8,53 +11,21 @@ export class Items {
 
   defaultItem: any = {
     "name": "Burt Bear",
-    "profilePic": "assets/img/speakers/bear.jpg",
+    "picture": "assets/img/speakers/bear.jpg",
     "about": "Burt is a Bear.",
   };
 
-
-  constructor() {
-    let items = [
-      {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
-      },
-      {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
-      },
-      {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
-      },
-      {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
-      },
-      {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
-      },
-      {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
-      },
-      {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
-      }
-    ];
-
+  constructor(public http: HttpClient) {
+    this.http.get('assets/i18n/items.json').subscribe(data => {
+      let mydata = JSON.parse(JSON.stringify(data));
+      for (var i = 0; i < Object.keys(mydata['data']).length; i++){
+        this.items.push(new Item(mydata['data'][i]));
+      }      
+    });
+    /*
     for (let item of items) {
       this.items.push(new Item(item));
-    }
+    }*/
   }
 
   query(params?: any) {
