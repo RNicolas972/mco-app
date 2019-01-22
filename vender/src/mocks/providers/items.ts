@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Item } from '../../models/item';
 import { HttpClient } from '@angular/common/http';
-import { File } from '@ionic-native/file';
 
 import 'rxjs/add/operator/map';
 
